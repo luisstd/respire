@@ -1,3 +1,6 @@
 {
+  "tasks": {
+    "start": "next start"
+  },
   "exclude": [".next/", "node_modules"]
 }

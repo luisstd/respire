@@ -1,3 +1,8 @@
 {
+  "tasks": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "exclude": [".next/", "node_modules"]
 }

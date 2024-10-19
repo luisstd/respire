@@ -5,8 +5,8 @@ WORKDIR /app
 COPY deno.json .
 
 RUN deno install
-
-COPY . .
+RUN deno task build
+RUN deno task start
 
 ARG PORT=3000
 EXPOSE $PORT

@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno task start"
+    "start": "next start"
   },
   "exclude": [".next/", "node_modules"]
 }

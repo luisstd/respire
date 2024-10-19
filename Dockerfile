@@ -7,6 +7,7 @@ COPY deno.json .
 RUN deno install
 
 COPY . .
+RUN deno task build
 RUN deno task start
 
 ARG PORT=8000

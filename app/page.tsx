@@ -1,4 +1,5 @@
-import { Breathing } from "./components/breathing";
+import { Breathing } from "@/components/breathing";
+import { Slider } from "@/components/ui/slider";
 
 export default function Home() {
   return (

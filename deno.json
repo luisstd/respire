@@ -1,0 +1,8 @@
+{
+  "lint": {
+    "exclude": [".next/", "node_modules"]
+  },
+  "fmt": {
+    "exclude": [".next/", "node_modules"]
+  }
+}

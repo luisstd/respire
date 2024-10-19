@@ -8,7 +8,7 @@ RUN deno install
 
 COPY . .
 
-ARG PORT=8000
+ARG PORT=3000
 EXPOSE $PORT
 
 CMD ["task", "start"]

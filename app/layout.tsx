@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { font } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }

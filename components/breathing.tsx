@@ -1,6 +1,6 @@
 "use client";
+import { Slider } from "@/components/ui/slider";
 import { motion } from "framer-motion";
-import { Slider } from "./ui/slider";
 
 export const Breathing: React.FC = () => {
 	return (

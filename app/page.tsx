@@ -8,7 +8,7 @@ export default function Home() {
 	const [speed, setSpeed] = useState(7);
 
 	return (
-		<div className="grid place-items-center min-h-screen max-h-screen overflow-hidden p-5">
+		<div className="h-screen w-screen overflow-hidden grid place-items-center p-5">
 			<main className="flex flex-col items-center gap-24 md:gap-36">
 				<div className="flex items-center gap-3 text-2xl font-sans font-bold">
 					<p>Breathe with the circle</p>
@@ -18,7 +18,6 @@ export default function Home() {
 					<Speed breathsPerMinute={speed} handleSpeedChange={setSpeed} />
 					<Speed breathsPerMinute={speed} handleSpeedChange={setSpeed} />
 				</div>
-				{/* <Menu /> */}
 			</main>
 		</div>
 	);

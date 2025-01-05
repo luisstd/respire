@@ -3,10 +3,10 @@
 import { Breathing } from "@/components/breathing";
 import { Menu } from "@/components/menu";
 import { Speed } from "@/components/speed";
-import { useState } from "react";
+import { useLocalStorage } from "usehooks-ts";
 
 export default function Home() {
-	const [speed, setSpeed] = useState(7);
+	const [speed, setSpeed] = useLocalStorage("speed", 7);
 
 	return (
 		<div className="h-dvh w-dvw overflow-hidden grid place-items-center p-5">

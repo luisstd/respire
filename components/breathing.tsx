@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import type React from "react";
 
@@ -6,11 +8,11 @@ interface BreathingProps {
 }
 
 export const Breathing: React.FC<BreathingProps> = ({
-	breathsPerMinute = 7,
+	breathsPerMinute = 6,
 }) => {
 	const cycleDuration = 60 / breathsPerMinute;
-	const scaleKeyframes = [0.15, 1.4, 0.15, 0.15];
-	const keyframeTimes = [0, 0.4, 0.98, 1];
+	const scaleKeyframes = [0.3, 1.3, 1.3, 0.3, 0.3];
+	const keyframeTimes = [0, 0.4, 0.5, 0.9, 1];
 
 	return (
 		<motion.div
@@ -20,7 +22,7 @@ export const Breathing: React.FC<BreathingProps> = ({
 			transition={{
 				duration: cycleDuration,
 				times: keyframeTimes,
-				ease: [[0.4, 0, 0.6, 1], "easeInOut", "linear"],
+				ease: [[0.4, 0, 0.6, 1], "linear", [0.4, 0, 0.6, 1], "linear"],
 				repeat: Number.POSITIVE_INFINITY,
 			}}
 		/>

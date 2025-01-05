@@ -1,6 +1,7 @@
 "use client";
 
 import { Breathing } from "@/components/breathing";
+import { Menu } from "@/components/menu";
 import { Speed } from "@/components/speed";
 import { useState } from "react";
 
@@ -15,7 +16,7 @@ export default function Home() {
 				</div>
 				<Breathing breathsPerMinute={speed} />
 				<div className="flex justify-between w-full">
-					<Speed breathsPerMinute={speed} handleSpeedChange={setSpeed} />
+					<Menu />
 					<Speed breathsPerMinute={speed} handleSpeedChange={setSpeed} />
 				</div>
 			</main>

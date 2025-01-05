@@ -7,7 +7,7 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
-import { Circle, Menu as MenuIcon, Moon, Sun } from "lucide-react";
+import { Circle, Info } from "lucide-react";
 import Link from "next/link";
 
 export const Menu: React.FC = () => {
@@ -15,7 +15,7 @@ export const Menu: React.FC = () => {
 	return (
 		<Sheet>
 			<SheetTrigger>
-				<MenuIcon />
+				<Info />
 			</SheetTrigger>
 			<SheetContent side="left" className="flex flex-col items-start h-full">
 				<SheetHeader>

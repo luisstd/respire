@@ -8,7 +8,7 @@ import {
 	DrawerTitle,
 	DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Settings2 } from "lucide-react";
+import { CircleEllipsis } from "lucide-react";
 
 interface SpeedProps {
 	breathsPerMinute?: number;
@@ -19,7 +19,7 @@ export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
 	return (
 		<Drawer>
 			<DrawerTrigger>
-				<Settings2 />
+				<CircleEllipsis />
 			</DrawerTrigger>
 			<DrawerContent>
 				<DrawerHeader>

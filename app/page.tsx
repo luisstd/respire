@@ -10,8 +10,8 @@ export default function Home() {
 
 	return (
 		<div className="h-dvh w-dvw overflow-hidden grid place-items-center p-5">
-			<main className="flex flex-col items-center gap-24 md:gap-36">
-				<div className="flex items-center gap-3 text-2xl font-sans font-bold">
+			<main className="flex flex-col items-center gap-24 md:gap-48">
+				<div className="flex items-center text-2xl md:text-3xl font-sans font-bold p-2">
 					<p>Breathe with the circle</p>
 				</div>
 				<Breathing breathsPerMinute={speed} />

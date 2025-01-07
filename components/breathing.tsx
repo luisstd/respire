@@ -17,7 +17,7 @@ export const Breathing: React.FC<BreathingProps> = ({
 	return (
 		<motion.div
 			key={breathsPerMinute}
-			className="w-64 h-64 bg-[hsl(305deg,46%,54%)] rounded-full"
+			className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-[hsl(305deg,46%,54%)] rounded-full"
 			animate={{ scale: scaleKeyframes }}
 			style={{ willChange: "transform" }}
 			transition={{

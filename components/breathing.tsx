@@ -19,6 +19,7 @@ export const Breathing: React.FC<BreathingProps> = ({
 			key={breathsPerMinute}
 			className="w-64 h-64 bg-[hsl(305deg,46%,54%)] rounded-full"
 			animate={{ scale: scaleKeyframes }}
+			style={{ willChange: "transform" }}
 			transition={{
 				duration: cycleDuration,
 				times: keyframeTimes,

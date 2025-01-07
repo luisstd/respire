@@ -39,7 +39,7 @@ export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
 					<DrawerDescription>Select breaths per minute</DrawerDescription>
 				</DrawerHeader>
 				<DrawerFooter>
-					<div className="flex gap-2 pb-10 mx-auto">
+					<div className="flex flex-wrap gap-2 pb-10 mx-auto">
 						{speeds.map((speed) => (
 							<Button
 								key={speed}

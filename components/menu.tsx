@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
 	Sheet,
 	SheetContent,
@@ -14,8 +15,10 @@ export const Menu: React.FC = () => {
 	const year = new Date().getFullYear();
 	return (
 		<Sheet>
-			<SheetTrigger>
-				<Info />
+			<SheetTrigger asChild>
+				<Button size="icon" variant="ghost" style={{ scale: 1.3 }}>
+					<Info />
+				</Button>
 			</SheetTrigger>
 			<SheetContent side="left" className="flex flex-col items-start h-full">
 				<SheetHeader>

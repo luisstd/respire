@@ -18,8 +18,10 @@ interface SpeedProps {
 export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
 	return (
 		<Drawer>
-			<DrawerTrigger>
-				<CircleEllipsis />
+			<DrawerTrigger asChild>
+				<Button size="icon" variant="ghost" style={{ scale: 1.3 }}>
+					<CircleEllipsis />
+				</Button>
 			</DrawerTrigger>
 			<DrawerContent>
 				<DrawerHeader>

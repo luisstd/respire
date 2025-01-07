@@ -9,6 +9,7 @@ import {
 	DrawerTrigger,
 } from "@/components/ui/drawer";
 import { CircleEllipsis } from "lucide-react";
+import { useLocalStorage } from "usehooks-ts";
 
 interface SpeedProps {
 	breathsPerMinute?: number;
@@ -16,6 +17,15 @@ interface SpeedProps {
 }
 
 export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
+	const [activeSpeed, setActiveSpeed] = useLocalStorage("speed", 7);
+
+	const speeds = [4, 5, 6, 7, 8, 9, 10];
+
+	const handleButtonClick = (speed: number) => {
+		setActiveSpeed(speed);
+		handleSpeedChange?.(speed);
+	};
+
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
@@ -30,56 +40,16 @@ export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
 				</DrawerHeader>
 				<DrawerFooter>
 					<div className="flex gap-2 pb-10 mx-auto">
-						<Button
-							size="icon"
-							variant="outline"
-							onClick={() => handleSpeedChange?.(4)}
-						>
-							4
-						</Button>
-						<Button
-							size="icon"
-							variant="outline"
-							onClick={() => handleSpeedChange?.(5)}
-						>
-							5
-						</Button>
-						<Button
-							size="icon"
-							variant="outline"
-							className=""
-							onClick={() => handleSpeedChange?.(6)}
-						>
-							6
-						</Button>
-						<Button
-							size="icon"
-							variant="outline"
-							onClick={() => handleSpeedChange?.(7)}
-						>
-							7
-						</Button>
-						<Button
-							size="icon"
-							variant="outline"
-							onClick={() => handleSpeedChange?.(8)}
-						>
-							8
-						</Button>
-						<Button
-							size="icon"
-							variant="outline"
-							onClick={() => handleSpeedChange?.(9)}
-						>
-							9
-						</Button>
-						<Button
-							size="icon"
-							variant="outline"
-							onClick={() => handleSpeedChange?.(10)}
-						>
-							10
-						</Button>
+						{speeds.map((speed) => (
+							<Button
+								key={speed}
+								size="icon"
+								variant={activeSpeed === speed ? "secondary" : "outline"}
+								onClick={() => handleButtonClick(speed)}
+							>
+								{speed}
+							</Button>
+						))}
 					</div>
 				</DrawerFooter>
 			</DrawerContent>

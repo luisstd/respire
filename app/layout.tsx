@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
 	title: "Respire - Breathing App",
 	description:
-		"Respire is a tool for breathing exercises. Simply adjust your breath to the circle.",
+		"Respire is a tool for breathing exercises. Simply breathe with the circle.",
 	applicationName: "Respire",
 	generator: "Next.js",
 	referrer: "origin-when-cross-origin",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Respire - Breathing App",
 		description:
-			"Respire is a tool for breathing exercises. Simply adjust your breath to the circle.",
+			"Respire is a tool for breathing exercises. Simply breathe with the circle.",
 		url: "https://respire.site",
 		siteName: "Respire",
 		locale: "en_US",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Respire - Breathing App",
 		description:
-			"Respire is a tool for breathing exercises. Simply adjust your breath to the circle.",
+			"Respire is a tool for breathing exercises. Simply breathe with the circle.",
 		// images: ["https://nextjs.org/og.png"],
 	},
 	appLinks: {

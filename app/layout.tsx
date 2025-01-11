@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { font } from "./fonts";
 import "./globals.css";
+import PlausibleProvider from "next-plausible";
 
 export const viewport: Viewport = {
 	themeColor: "hsl(305deg 46% 54%)",
@@ -91,6 +92,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<PlausibleProvider domain="respire.site" />
+			</head>
 			<body className={font.className}>{children}</body>
 		</html>
 	);

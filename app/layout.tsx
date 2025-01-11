@@ -3,10 +3,6 @@ import { font } from "./fonts";
 import "./globals.css";
 import PlausibleProvider from "next-plausible";
 
-export const viewport: Viewport = {
-	themeColor: "hsl(305deg 46% 54%)",
-};
-
 export const metadata: Metadata = {
 	title: "Respire - Breathing App",
 	description:

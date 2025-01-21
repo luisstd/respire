@@ -37,6 +37,7 @@ export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
 					variant="ghost"
 					style={{ scale: 1.3 }}
 					onClick={() => setIsDrawerOpen(true)}
+					aria-label="Speed settings"
 				>
 					<CircleEllipsis />
 				</Button>

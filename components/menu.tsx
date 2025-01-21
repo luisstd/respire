@@ -16,7 +16,12 @@ export const Menu: React.FC = () => {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<Button size="icon" variant="ghost" style={{ scale: 1.3 }}>
+				<Button
+					size="icon"
+					variant="ghost"
+					style={{ scale: 1.3 }}
+					aria-label="Info menu"
+				>
 					<Info />
 				</Button>
 			</SheetTrigger>

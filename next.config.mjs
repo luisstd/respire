@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 import withSerwistInit from "@serwist/next";
+const { withPlausibleProxy } = require("next-plausible");
 
 const revision = crypto.randomUUID();
 
@@ -11,8 +12,8 @@ const withSerwist = withSerwistInit({
 	additionalPrecacheEntries: [{ url: "/" }, revision],
 });
 
-const nextConfig = withSerwist({
+const nextConfig = {
 	reactStrictMode: true,
-});
+};
 
-export default nextConfig;
+export default withPlausibleProxy()(withSerwist(nextConfig));

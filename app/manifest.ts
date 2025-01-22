@@ -8,8 +8,9 @@ export default function manifest(): MetadataRoute.Manifest {
       "Respire is a tool for breathing exercises. Simply breathe with the circle.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#BF52B6",
+    orientation: "portrait",
+    theme_color: "#FFFFFF",
+    background_color: "#FFFFFF",
     icons: [
       {
         src: "/web-app-manifest-192x192.png",

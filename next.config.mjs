@@ -8,7 +8,6 @@ const withSerwist = withSerwistInit({
 	swSrc: "app/sw.ts",
 	swDest: "public/sw.js",
 	reloadOnOnline: true,
-	cacheOnNavigation: true,
 	additionalPrecacheEntries: [{ url: "/" }, revision],
 });
 

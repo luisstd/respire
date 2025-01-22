@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 import withSerwistInit from "@serwist/next";
-const { withPlausibleProxy } = require("next-plausible");
+import { withPlausibleProxy } from "next-plausible";
 
 const revision = crypto.randomUUID();
 

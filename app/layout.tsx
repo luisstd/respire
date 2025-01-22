@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 	description:
 		"Respire is a tool for breathing exercises. Simply breathe with the circle.",
 	applicationName: "Respire",
+	appleWebApp: {
+		capable: true,
+		statusBarStyle: "default",
+		title: "Respire - Breathing App",
+		// startUpImage: [],
+	},
 	generator: "Next.js",
 	referrer: "origin-when-cross-origin",
 	keywords: [
@@ -79,6 +85,10 @@ export const metadata: Metadata = {
 			should_fallback: true,
 		},
 	},
+};
+
+export const viewport: Viewport = {
+	themeColor: "#FFFFFF",
 };
 
 export default function RootLayout({

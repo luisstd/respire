@@ -18,10 +18,10 @@ interface SpeedProps {
 }
 
 export const Speed: React.FC<SpeedProps> = ({ handleSpeedChange }) => {
-	const [activeSpeed, setActiveSpeed] = useLocalStorage("speed", 7);
+	const [activeSpeed, setActiveSpeed] = useLocalStorage("speed", 5);
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-	const speeds = [4, 5, 6, 7, 8, 9, 10];
+	const speeds = [4, 5, 6, 7, 8, 9];
 
 	const handleButtonClick = (speed: number) => {
 		setActiveSpeed(speed);

@@ -7,7 +7,7 @@ interface BreathingProps {
 }
 
 export const Breathing: React.FC<BreathingProps> = ({
-	breathsPerMinute = 6,
+	breathsPerMinute = 5,
 }) => {
 	const bpm = Math.max(4, Math.min(breathsPerMinute, 10));
 	const cycleDuration = 60 / bpm;

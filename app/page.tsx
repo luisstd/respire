@@ -6,7 +6,7 @@ import { Speed } from "@/components/speed";
 import { useLocalStorage } from "usehooks-ts";
 
 export default function Home() {
-	const [speed, setSpeed] = useLocalStorage("speed", 7);
+	const [speed, setSpeed] = useLocalStorage("speed", 5);
 
 	return (
 		<div className="h-dvh w-dvw overflow-hidden grid place-items-center">

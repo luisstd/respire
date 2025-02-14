@@ -11,9 +11,9 @@ export default function Home() {
 	return (
 		<div className="h-dvh w-dvw overflow-hidden grid place-items-center">
 			<main className="flex flex-col items-center gap-24 md:gap-48">
-				<div className="flex items-center text-2xl md:text-3xl font-sans font-bold p-2">
-					<p>Breathe with the circle</p>
-				</div>
+				<h1 className="scroll-m-20 text-2xl md:text-3xl font-semibold tracking-tight p-2">
+					Breathe with the circle
+				</h1>
 				<Breathing breathsPerMinute={speed} />
 				<div className="flex justify-between w-full">
 					<Menu />

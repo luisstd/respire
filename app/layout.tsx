@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { font } from "./fonts";
 import "./globals.css";
 import PlausibleProvider from "next-plausible";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
 	title: "Respire - Breathing App",
@@ -97,11 +98,20 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<head>
 				<PlausibleProvider domain="respire.site" />
 			</head>
-			<body className={font.className}>{children}</body>
+			<body className={font.className}>
+				<ThemeProvider
+					enableColorScheme
+					enableSystem
+					attribute="data-mode"
+					defaultTheme="system"
+				>
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	);
 }

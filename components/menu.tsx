@@ -10,7 +10,13 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
-import { Circle, Info } from "lucide-react";
+import {
+	Circle,
+	Info,
+	PanelRight,
+	PanelRightOpen,
+	Sidebar,
+} from "lucide-react";
 import Link from "next/link";
 
 export const Menu: React.FC = () => {
@@ -24,7 +30,7 @@ export const Menu: React.FC = () => {
 					style={{ scale: 1.3 }}
 					aria-label="Info menu"
 				>
-					<Info />
+					<PanelRightOpen />
 				</Button>
 			</SheetTrigger>
 

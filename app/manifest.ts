@@ -15,13 +15,13 @@ export default function manifest(): MetadataRoute.Manifest {
     screenshots: [
       {
         src: "/screenshot.png",
-        sizes: "1170 × 2532",
+        sizes: "1170x2532",
         type: "image/png",
         form_factor: "narrow",
       },
       {
         src: "/screenshot-wide.png",
-        sizes: "2048 × 1808",
+        sizes: "2048x1808",
         type: "image/png",
         form_factor: "wide",
       },
@@ -29,7 +29,7 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [
       {
         src: "/maskable-icon.png",
-        sizes: "512X512",
+        sizes: "512x512",
         type: "image/png",
         purpose: "maskable",
       },

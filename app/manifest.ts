@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Respire - Breathing App",
+    id: "respire",
     short_name: "Respire",
     description:
       "Respire is a tool for breathing exercises. Simply breathe with the circle.",
@@ -11,6 +12,20 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: "portrait",
     theme_color: "#FFFFFF",
     background_color: "#FFFFFF",
+    screenshots: [
+      {
+        src: "/screenshot.png",
+        sizes: "1170 × 2532",
+        type: "image/png",
+        form_factor: "narrow",
+      },
+      {
+        src: "/screenshot-wide.png",
+        sizes: "2048 × 1808",
+        type: "image/png",
+        form_factor: "wide",
+      },
+    ],
     icons: [
       {
         src: "/maskable-icon.png",

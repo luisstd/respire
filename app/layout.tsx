@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 	],
 	authors: [{ name: "Luis", url: "https://lstd.dev" }],
 	creator: "Luis Steidle",
-	publisher: "Noisia Labs",
+	publisher: "Luis Steidle",
 	category: "",
 	formatDetection: {
 		email: false,
